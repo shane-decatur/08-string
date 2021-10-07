@@ -37,9 +37,24 @@ char * mystrncat( char *dest, char *source, int n){
   return dest;
 }
 
-// int mystrcmp( char *s1, char *s2 ){
-//
-// }
+int mystrcmp( char *s1, char *s2 ){
+  int sum_1 = 0;
+  int sum_2 = 0;
+  int i;
+  for (i = 0; s1[i] != 0; i++){
+    sum_1 += s1[i];
+  }
+  for (i = 0; s2[i] != 0; i++){
+    sum_2 += s2[i];
+  }
+  if (sum_1 < sum_2){
+    return -1;
+  }
+  if (sum_1 > sum_2){
+    return 1;
+  }
+  return 0;
+}
 
 char * mystrchr( char *s, char c ){
   int counter = 0;
