@@ -40,7 +40,14 @@ char * mystrncat( char *dest, char *source, int n){
 // int mystrcmp( char *s1, char *s2 ){
 //
 // }
-//
-// char * mystrchr( char *s, char c ){
-//
-// }
+
+char * mystrchr( char *s, char c ){
+  int counter = 0;
+  while (*(s+counter) != c && *(s+counter)!=0){
+    counter++;
+  }
+  if (*(s+counter)==0 && c!=0){
+    return NULL;
+  }
+  return s+counter;
+}

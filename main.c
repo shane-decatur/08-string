@@ -39,18 +39,18 @@ int main() {
   s1[12] = 0;
   printf("[mine]:\t\t[%s]\n", mystrncat(s1, s2, 3) );
 
-  // printf("\nTesting strchr(s1, 'l'):\n");
-  // printf("[standard]:\t[%p]\n", strchr(s1, 'l') );
-  // printf("[mine]:\t\t[%p]\n", mystrchr(s1, 'l') );
-  //
-  // printf("\nTesting strchr(s1, 0):\n");
-  // printf("[standard]:\t[%p]\n", strchr(s1, 0) );
-  // printf("[mine]:\t\t[%p]\n", mystrchr(s1, 0) );
-  //
-  // printf("\nTesting strchr(s1, 'z'):\n");
-  // printf("[standard]:\t[%p]\n", strchr(s1, 'z') );
-  // printf("[mine]:\t\t[%p]\n", mystrchr(s1, 'z') );
-  //
+  printf("\nTesting strchr(s1, 'l'):\n");
+  printf("[standard]:\t[%p]\n", strchr(s1, 'l') );
+  printf("[mine]:\t\t[%p]\n", mystrchr(s1, 'l') );
+
+  printf("\nTesting strchr(s1, 0):\n");
+  printf("[standard]:\t[%p]\n", strchr(s1, 0) );
+  printf("[mine]:\t\t[%p]\n", mystrchr(s1, 0) );
+
+  printf("\nTesting strchr(s1, 'z'):\n");
+  printf("[standard]:\t[%p]\n", strchr(s1, 'z') );
+  printf("[mine]:\t\t[%p]\n", mystrchr(s1, 'z') );
+  
   // printf("\nTesting strcmp\n");
   // printf("\tComparting ab to abc:\n");
   // printf("\t\t[standard]:\t[%d]\n", strcmp("ab", "abc") );
